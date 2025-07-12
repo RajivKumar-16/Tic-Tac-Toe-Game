@@ -45,7 +45,7 @@ body {
 #box-but {
   width: 27.5rem;
   height: 27.5rem;
-  display: none;
+  display: grid;
   padding: 1rem;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);

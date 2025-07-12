@@ -98,5 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   reset.addEventListener("click", resetfun);
-  showDetails.addEventListener("click", showDeveloper);
+  // showDetails.addEventListener("click", showDeveloper);
 });
