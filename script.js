@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const flipBox = document.getElementById("flip-container");
 
   let turnO = true;
-  let rotAngle = 180;
+  let flip = 1;
 
   const winpattern = [
     [0, 1, 2],
@@ -35,14 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function showDeveloper() {
-    flipBox.style.transform = `rotateY(${rotAngle}deg)`;
-    rotAngle+=180;
-    console.log(rotAngle);
-    // if (rotAngle < 0) {
-    //   document.getElementById("box-but").style.display = "none";
-    // }else{
-    //   document.getElementById("box-but").style.display = "grid";
-    // }
+    flip *= -1;
+    if (flip == -1) {
+      document.getElementById("details-box").style.right = "0";
+      document.getElementById("box-but").style.left = "600px";
+      document.getElementById("the-winner").style.left = "600px";
+      document.getElementById("head1").innerText = "Back";
+    } else {
+      document.getElementById("details-box").style.right = "600px";
+      document.getElementById("box-but").style.left = "0";
+      document.getElementById("the-winner").style.left = "0";
+      document.getElementById("head1").innerText = "Tic-Tac-Toe";
+    }
   }
 
   function disabledEnable(num) {
@@ -98,5 +102,5 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   reset.addEventListener("click", resetfun);
-  // showDetails.addEventListener("click", showDeveloper);
+  showDetails.addEventListener("click", showDeveloper);
 });

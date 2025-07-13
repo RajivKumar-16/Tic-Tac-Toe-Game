@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Play a fun and interactive Tic Tac Toe game." />
-    <meta name="keywords" content="tic tac toe, game, ox, play online, HTML game, JavaScript game, browser game" />
+    <meta
+      name="description"
+      content="Play a fun and interactive Tic Tac Toe game."
+    />
+    <meta
+      name="keywords"
+      content="tic tac toe, game, ox, play online, HTML game, JavaScript game, browser game"
+    />
     <meta name="author" content="Rajiv Kumar Gond" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="style.css" />
     <title>Tic-Tac-Toe Game</title>
   </head>
+
   <body>
     <div class="container">
-      <div title="Click to Flip" id="game">
-        <h1>Tic-Tac-Toe</h1>
+      <div title="Click for About & Contact" id="game">
+        <h1 id="head1">Tic-Tac-Toe</h1>
+        <span>Click me</span>
       </div>
       <div id="flip-container" class="main-box">
         <div id="box-but">
@@ -27,11 +35,33 @@
           <button class="box"></button>
           <button class="box"></button>
         </div>
+
         <div id="the-winner"></div>
-        <!-- <div id="details-box">
-          <p>Hello World
-          </p>
-        </div> -->
+
+        <div id="details-box">
+          <div class="details-top">
+            <h1>About & Contact</h1>
+            <br />
+            <p>
+              <strong>Tic Tac Toe</strong> is a simple yet engaging two-player
+              strategy game designed for fun and quick entertainment. Whether
+              you're playing casually or challenging a friend, the game offers a
+              smooth and interactive experience. It's a perfect way to pass time
+              and sharpen your mind. The user-friendly interface ensures players
+              of all ages can enjoy it easily on any device.
+            </p>
+            <br />
+            <p id="p1">
+              For <strong>support, feedback, or suggestions</strong>, <br />feel
+              free to contact us at.
+            </p>
+            <a href="mailto:skycast24.rajiv@gmail.com">Email Us</a>
+          </div>
+          <div class="details-bottom">
+            <p>&copy; 2025 Tic-Toc-Toe. All rights reserved.</p>
+            <p id="para1">Made with ❤️ by Rajiv Kumar Gond</p>
+          </div>
+        </div>
       </div>
 
       <button id="reset">Reset</button>
